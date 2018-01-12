@@ -1,0 +1,30 @@
+
+Hardware requirements
+
+1. Intel Pentium 800 MHz
+2. Intel chipset 810 MOtherboard
+3. 14" color monitor
+4. 256 MB RAM
+
+Basic functions of graphics.h
+
+(1) Initgraph
+Declaration:
+ void far initgraph(int far* graphdriver)
+1. To start graphics system, you call this
+2. This initializes graphic system driver from disk (or validity register driver)
+3. This function also reset system
+
+(2) GET Pixel : This function gets the coor specified pixel (get the color of pixel located at (x,y))
+unsigned far get pixel (int x, int y)
+
+(3) PUT Pixel : THis places pixel at a sepecific point.
+void far putpixel( int x, int y, int color)
+This plots a point in the defined at (x,y)
+
+(4) close graph : THis function shuts down the graphics system
+Declaration: void far close graph(void)
+Deallocate all the memory
+Restores the screen the mode
+
+
